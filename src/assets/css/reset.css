@@ -219,7 +219,7 @@ input[type='submit'],
 input[type='button'],
 input[type='search'] {
   border-radius: 0;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
 }
 /* safari style reset */
 /** custom by YCW **/

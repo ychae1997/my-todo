@@ -1,10 +1,38 @@
 @import url('reset.css');
+@import url('font.css');
+:root {
+  --bg-color: #f9fafb;
+  --modal-bg-color: rgba(0, 0, 0, 0.5);
+  --box-color: white;
+  --brand-color: #3f72af;
+  --sub-color: #dbe2ef;
+  --border-color: #dbe2ef;
+  --text-color: #343a40;
+  --sub-text-color: #495057;
+  --disabled-text-color: #ced4da;
+  --disabled-color: #b6cde5;
+  --danger-color: #e76c6c;
+}
+html.dark {
+  --bg-color: #404258;
+  --modal-bg-color: rgba(0, 0, 0, 0.5);
+  --box-color: #474e68;
+  --brand-color: #dbe2ef;
+  --sub-color: #6b728e;
+  --border-color: #50577a;
+  --text-color: #f1f3f5;
+  --sub-text-color: #868e96;
+  --disabled-text-color: #6b728e;
+  --disabled-color: #7a7f9b;
+  --danger-color: #dbe2ef;
+}
+
+header,
+.headerMenu {
+  font-family: 'Lilita One', cursive;
+}
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,4 +40,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+li {
+  list-style: none;
+}
+button {
+  outline: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
