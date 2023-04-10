@@ -1,0 +1,61 @@
+{
+  "todo": [
+    {
+      "id": 1,
+      "createdAt": "111.2.3",
+      "items": [
+        {
+          "id": "todo1",
+          "text": "나라 세우기",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "createdAt": "2023.4.8",
+      "items": []
+    },
+    {
+      "id": 3,
+      "createdAt": "2023.4.11",
+      "items": []
+    },
+    {
+      "createdAt": "2023.4.7",
+      "items": [
+        {
+          "id": "f51d58cd-7fa3-4a1d-955f-63ae19fed315",
+          "text": "오늘 할일",
+          "status": "active"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "createdAt": "2023.4.10",
+      "items": [
+        {
+          "id": "eb4e5482-5937-4c1b-9d7a-8458f41a2b45",
+          "text": "ㅎㅇ",
+          "status": "active"
+        }
+      ],
+      "id": 5
+    }
+  ],
+  "diary": [
+    {
+      "createdAt": "2023.4.2",
+      "text": "졸려,,,",
+      "status": "sadness",
+      "id": 103
+    },
+    {
+      "createdAt": "2023.4.7",
+      "text": "20시36분\n\n\n*``･*+。\n　｜　　　`*｡\n　｜ 　　　 *｡\n　｡∩∧ ∧ 　 *\n+ 　 (･∀･ )*｡+ﾟ\n`*｡　ヽ　 つ*ﾟ*\n　`･+｡*･`ﾟ⊃ +ﾟ\n　☆　 ∪~ ｡*ﾟ\n　`･+｡*･+ ﾟ 시간아 나와라",
+      "status": "good",
+      "id": 104
+    }
+  ]
+}
