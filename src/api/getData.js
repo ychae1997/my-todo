@@ -51,4 +51,14 @@ export default class GetData {
   async #getDiaryItems(today) {
     return this.apiClient.diary().then(res => res.data);
   }
+
+  async deleteItem(body) {
+    return this.apiClient.delete(body).then(res => res.data);
+  }
+  async putItem(body) {
+    const [id, payload] = body;
+    // console.log(id);
+    // console.log(payload);
+    return this.apiClient.put(payload, id).then(res => res.data);
+  }
 }

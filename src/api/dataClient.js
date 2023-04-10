@@ -25,7 +25,10 @@ export default class DataClient {
   async diary() {
     return this.httpClient.get('diary');
   }
-  async delete(payload, id) {
-    return this.httpClient.delete(`todo/${id}`, payload);
+  async put(payload, id) {
+    return this.httpClient.put(`diary/${id}`, payload);
+  }
+  async delete(id) {
+    return this.httpClient.delete(`diary/${id}`);
   }
 }
