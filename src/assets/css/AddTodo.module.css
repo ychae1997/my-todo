@@ -1,0 +1,86 @@
+.bg {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  z-index: 5555;
+  background-color: var(--modal-bg-color);
+}
+.wrap {
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+}
+/* layout */
+.del {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin: 1.5rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--danger-color);
+}
+.del svg {
+  display: block;
+  font-size: 2rem;
+  color: var(--box-color);
+}
+/* delete */
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--box-color);
+  border-radius: 1rem 1rem 0 0;
+  padding: 1.3rem 1rem 1rem 1rem;
+}
+.input {
+  border: none;
+  border-bottom: 2px solid var(--sub-color);
+  height: 2rem;
+  margin-bottom: 1rem;
+  outline: none;
+  background-color: var(--box-color);
+}
+.input:focus {
+  border-color: var(--brand-color);
+}
+.btnBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnDate {
+  position: relative;
+  width: 2rem;
+  color: var(--brand-color);
+}
+.icon {
+  font-size: 1em;
+  height: 1em;
+}
+.date {
+  margin-left: 0.5rem;
+  position: absolute;
+  width: 100%;
+  top: -0.6px;
+}
+/* 달력 */
+.send {
+  width: 2rem;
+  height: 2rem;
+}
+.send svg {
+  font-size: 2rem;
+}
+.send * {
+  fill: var(--brand-color);
+}
+/* form */
