@@ -1,0 +1,31 @@
+.content {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dotted var(--sub-color);
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.img {
+  width: 4rem;
+  margin-bottom: 0.5rem;
+}
+.img .status {
+  width: 100%;
+}
+.date {
+  color: var(--sub-text-color);
+}
+.date .day {
+  padding-left: 0.5rem;
+}
+.text {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* 말줄임 적용 */
+}

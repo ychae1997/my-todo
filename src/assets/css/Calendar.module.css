@@ -1,0 +1,49 @@
+.btnLink {
+  color: var(--brand-color);
+  font-size: 1em;
+  line-height: 1em;
+  position: relative;
+}
+.formNext {
+  position: absolute;
+  top: 0;
+}
+.formNext * {
+  stroke: var(--brand-color);
+}
+/* List button */
+.calendar {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.btnToday {
+  position: fixed;
+  width: 6em;
+  height: 2em;
+  left: calc(50% - 3em);
+  bottom: 7rem;
+  font-size: 1em;
+  color: var(--brand-color);
+}
+.btnToday:after {
+  content: ' >>';
+  position: absolute;
+  transform: rotate(-90deg);
+  right: 44%;
+  top: -1rem;
+  animation: moveArrow 2s infinite;
+}
+@keyframes moveArrow {
+  0% {
+    color: var(--brand-color);
+    top: -1rem;
+  }
+  50% {
+    color: var(--sub-color);
+    top: -1.5rem;
+  }
+  100% {
+    opacity: 0;
+    top: -2rem;
+  }
+}

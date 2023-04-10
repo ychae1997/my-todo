@@ -1,0 +1,52 @@
+.cells {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(7, 1fr);
+}
+.cell {
+  justify-self: center;
+  position: relative;
+}
+.date,
+.btnDiary {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.date {
+  font-size: 1em;
+}
+.date:disabled {
+  color: var(--disabled-text-color);
+  cursor: not-allowed;
+}
+.selected {
+  position: relative;
+  color: var(--brand-color);
+  font-weight: 700;
+  z-index: 1;
+}
+.selected:after {
+  content: '';
+  display: block;
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  z-index: -1;
+  left: 15%;
+  top: 15%;
+  border-radius: 50%;
+  background-color: var(--sub-color);
+}
+.hidden {
+  visibility: hidden;
+}
+/* date */
+.btnDiary {
+  position: absolute;
+  z-index: 11;
+}
+.status {
+  width: 100%;
+}
+/* .btnDiary img  */
+/* have diary */

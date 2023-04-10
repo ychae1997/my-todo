@@ -1,0 +1,75 @@
+.header {
+  text-align: center;
+  color: var(--text-color);
+  padding: 3rem 0;
+}
+.headerList {
+  display: inline-block;
+  width: 6rem;
+  cursor: pointer;
+}
+.headerYear {
+  font-size: 1.1em;
+  margin-bottom: 0.75rem;
+}
+.headerMonth {
+  font-size: 1.4em;
+}
+/* -- Calendar Header -- */
+.modalWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background-color: var(--modal-bg-color);
+}
+.modal {
+  width: 80%;
+  max-width: 350px;
+  background-color: var(--box-color);
+  padding: 1.2rem 1rem 1rem 1rem;
+  border-radius: 1rem;
+}
+/* modal layout */
+.controller {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.control {
+  width: 2rem;
+  height: 2rem;
+}
+.control * {
+  stroke: var(--text-color);
+}
+.modalYear {
+  font-size: 1.1em;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+/* modal controller */
+.months {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.btnMonth {
+  font-size: 0.95em;
+  justify-self: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.selected {
+  color: var(--brand-color);
+  background-color: var(--sub-color);
+}
+/* modal months */
+/* -- Calendar Modal --  */

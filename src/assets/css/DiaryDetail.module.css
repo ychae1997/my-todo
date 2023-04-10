@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.status {
+  margin-bottom: 1rem;
+}
+.date {
+  margin-bottom: 1rem;
+}
+.day {
+  display: block;
+  margin-top: 0.3rem;
+  opacity: 0.5;
+}
+.text {
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.2em;
+}

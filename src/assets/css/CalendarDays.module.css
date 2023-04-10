@@ -1,0 +1,11 @@
+.days {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 2rem;
+}
+.day {
+  justify-self: center;
+  font-size: 0.95em;
+  color: var(--sub-text-color);
+}
