@@ -24,9 +24,9 @@ function App() {
     <div className="wrap">
       <DarkModeProvider>
         {/* {splash && <Splash />} */}
-        <Header header={pathname} />
         <TodoApiProvider>
           <QueryClientProvider client={queryClient}>
+            <Header header={pathname} />
             <Outlet />
           </QueryClientProvider>
         </TodoApiProvider>

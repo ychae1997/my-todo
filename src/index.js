@@ -9,6 +9,7 @@ import TodoActive from './pages/TodoActive';
 import Diary from './pages/Diary';
 import DiaryDetail from './pages/DiaryDetail';
 import DiaryCreate from './pages/DiaryCreate';
+import DiaryEdit from './pages/DiaryEdit';
 import DiaryList from './pages/DiaryList';
 
 const router = createBrowserRouter([
@@ -34,12 +35,16 @@ const router = createBrowserRouter([
         element: <Diary />
       },
       {
-        path: 'diary/:date',
+        path: 'diary/:id',
         element: <DiaryDetail />
       },
       {
-        path: 'diary/create/:date',
+        path: 'diary/create',
         element: <DiaryCreate />
+      },
+      {
+        path: 'diary/edit/:id',
+        element: <DiaryEdit />
       },
       {
         path: 'diary/list',
@@ -51,9 +56,9 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  // <React.StrictMode>
+  <RouterProvider router={router} />
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
