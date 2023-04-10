@@ -1,0 +1,12 @@
+.incomplete {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1em;
+  border: 1px solid var(--border-color);
+  background-color: var(--box-color);
+  border-radius: 0.3rem;
+}
+/* go active */

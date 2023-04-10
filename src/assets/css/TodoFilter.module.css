@@ -1,0 +1,29 @@
+.filters {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.filters li:not(:first-of-type) {
+  margin-left: 1rem;
+}
+.filter {
+  color: var(--disabled-color);
+  font-size: 1em;
+  line-height: 1em;
+}
+.active {
+  color: var(--brand-color);
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+}
+.active:after {
+  content: '';
+  display: block;
+  width: 130%;
+  height: 0.3rem;
+  position: absolute;
+  left: -15%;
+  top: calc(0.35rem);
+  z-index: -1;
+  background-color: var(--sub-color);
+}

@@ -1,0 +1,13 @@
+.empty {
+  margin-top: 10rem;
+  padding-top: 6rem;
+  background-image: url('../images/cloud1.png');
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+}
+.ment {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.2em;
+}

@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+}
+.title {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin-bottom: 2rem;
+}
+.title:after {
+  content: '(•̀ᴗ•́)و ̑̑';
+}
+
+.buttons {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  bottom: 1rem;
+}
+.button {
+  width: 50%;
+  text-align: center;
+}

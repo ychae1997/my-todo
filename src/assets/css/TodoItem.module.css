@@ -1,0 +1,43 @@
+.todo {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo:last-of-type {
+  margin-bottom: 3rem;
+}
+.chk {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0 none;
+}
+.label {
+  cursor: pointer;
+}
+.customChk {
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 1px solid var(--disabled-color);
+  border-radius: 50%;
+  transition-duration: 0.15s;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.chk:checked + .label .customChk {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+  background-size: 13px;
+  background-image: url('../images/checked.png');
+}
+
+.text {
+  font-size: 1em;
+  margin-left: 0.6rem;
+}
