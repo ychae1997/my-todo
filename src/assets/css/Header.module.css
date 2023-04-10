@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.9rem;
+}
+.titleGroup {
+  position: relative;
+}
+.title {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: var(--brand-color);
+  cursor: pointer;
+}
+.title svg {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.menu {
+  position: absolute;
+  z-index: 111;
+  background-color: var(--box-color);
+  width: 80%;
+  padding: 0.75rem 1rem;
+  transform: translateX(-1rem) translateY(0.75rem);
+}
+.menu li {
+  list-style: none;
+  font-size: 1.25em;
+  color: var(--disabled-color);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.menu li:not(:last-of-type) {
+  margin-bottom: 0.75rem;
+}
+.menu .active {
+  color: var(--brand-color);
+}
+.btnGroup button {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.25rem;
+  color: var(--brand-color);
+}
+.btnGroup button svg {
+  width: 80%;
+  height: 80%;
+}
+/* header main */
+
+.back {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.back button {
+  height: 2rem;
+  width: 2rem;
+}
+.back button svg * {
+  stroke: var(--text-color);
+}
+.moreBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background-color: var(--modal-bg-color);
+}
+.more {
+  width: 12rem;
+  background-color: var(--box-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 5px var(--disabled-color);
+}
+.more li:not(:last-of-type) {
+  margin-bottom: 0.3rem;
+}
+.more button {
+  font-size: 1em;
+  width: 100%;
+}
+/* header sub */
